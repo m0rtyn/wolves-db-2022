@@ -8,9 +8,9 @@
   },
   "production": {
     "use_env_variable": "DATABASE_URL",
-    "dialectOption": {
+    "dialectOptions": {
       "ssl": {
-        "requestUnauthorized": false
+        "rejectUnauthorized": false
       }
     }
   }
