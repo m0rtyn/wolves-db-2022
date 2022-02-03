@@ -17,7 +17,7 @@ app.get('/', async (req, res) => {
   counter.counts += 1
   await counter.save()
 
-  res.send(`Наш кАуНтЕр ✨ ${counter.counts}`)
+  res.send(`OUR COUNTER, MATE: ${counter.counts}`)
 })
 
 app.listen(PORT, () => {
