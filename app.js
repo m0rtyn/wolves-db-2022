@@ -4,7 +4,7 @@ const dotenv = require('dotenv')
 const { Counter } = require('./db/models')
 dotenv.config()
 
-const { PORT } = process.env
+const PORT = process.env.PORT ?? 3000
 
 app.get('/', async (req, res) => {
   const [counter] = await Counter.findOrCreate({
